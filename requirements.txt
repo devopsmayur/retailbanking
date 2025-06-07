@@ -1,0 +1,28 @@
+# Core AI API Libraries
+openai>=1.0.0
+anthropic>=0.7.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Optional: Enhanced Error Handling and Logging
+requests>=2.28.0
+urllib3>=1.26.0
+
+# Optional: Data Validation and Type Checking
+pydantic>=2.0.0
+typing-extensions>=4.0.0
+
+# Optional: Configuration and Utilities
+pyyaml>=6.0
+click>=8.0.0
+
+# Optional: Enhanced Output Formatting
+rich>=13.0.0
+colorama>=0.4.6
+
+# Development Dependencies (uncomment if needed)
+# pytest>=7.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
