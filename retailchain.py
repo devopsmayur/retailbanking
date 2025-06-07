@@ -2,7 +2,7 @@
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-import anthropi
+import anthropic
 
 # Load API keys from .env file
 load_dotenv()
