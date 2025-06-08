@@ -12,8 +12,11 @@ This is a simple Python script that helps you get banking product recommendation
 🧱 IBM Granite model 
 
 ollama pull granite
+
 ollama serve
+
 python retail.py
+
 Age: 30, Salary: $90,000, Goal: Buy a house
 
 
