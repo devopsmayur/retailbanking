@@ -9,41 +9,27 @@ A privacy-focused retail banking assistant that runs entirely on your local mach
 - **Privacy-First**: All customer data stays on your machine
 - **Model Flexibility**: Works with any Ollama-compatible model
 - **Mac Optimized**: Specially tuned for Mac performance
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- macOS (Intel or Apple Silicon)
-- Python 3.7+
-- 8GB+ RAM recommended
-
-### 1. Install Ollama
-
-**Option A: GUI Installer (Recommended)**
-1. Visit [https://ollama.com](https://ollama.com)
-2. Download the Mac installer
-3. Open the `.dmg` file and drag Ollama to Applications
-4. Launch Ollama from Applications
-
-**Option B: Homebrew**
-```bash
-brew install ollama
 ```
 
-### 2. Install AI Models
+Built with ❤️ for privacy-conscious banking applications
 
-Start with lightweight models suitable for banking applications:
+This Python application uses the Ollama local LLM runtime and the IBM Granite model to deliver banking product recommendations and associated risk analysis — securely and privately on your local machine.
 
-```bash
-# Essential models (choose based on your Mac's RAM)
-ollama pull phi3:mini        # 3.8B params, ~2.3GB (MacBook Air 8GB)
-ollama pull mistral:7b       # 7B params, ~4GB (MacBook Pro 16GB+)
-ollama pull llama2:7b        # 7B params, ~4GB (Alternative option)
+✨ Features
+🔐 Privacy-first: Runs entirely on your local machine using Ollama.
 
-# Advanced models (for 16GB+ RAM Macs)
-ollama pull llama2:13b       # 13B params, ~7GB (Better quality)
-ollama pull codellama:13b    # 13B params, ~7GB (Code-focused reasoning)
+🤖 AI-Powered Advice: Uses IBM's Granite model for generating:
+
+Retail banking product recommendations
+
+In-depth risk analysis of those recommendations
+
+🧠 Role-specific LLM guidance:
+
+Role: Retail Banking Advisor
+
+Role: Banking Risk Analyst
+
 ```
 
 ### 3. Set Up Python Environment
