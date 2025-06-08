@@ -9,38 +9,15 @@ This is a simple Python script that helps you get banking product recommendation
 
 🧠 Ollama installed and running
 
-🧱 IBM Granite model pulled with:
+🧱 IBM Granite model 
 
-bash
-Copy
-Edit
 ollama pull granite
-▶️ How to Run
-🚀 Start Ollama:
-
-bash
-Copy
-Edit
 ollama serve
-▶️ Run the script:
-
-bash
-Copy
-Edit
 python retail.py
-💬 Enter customer details when asked. Example:
-
-yaml
-Copy
-Edit
 Age: 30, Salary: $90,000, Goal: Buy a house
-✅ The script will show:
 
-💡 Banking product recommendations
 
-⚠️ Risk analysis of those recommendations
-
-🔍 What It Does
+What It Does
 Uses the IBM Granite LLM (locally via Ollama)
 
 Step 1: Suggests products like savings, loans, credit cards
