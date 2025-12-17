@@ -32,7 +32,7 @@ def call_claude(prompt: str) -> str:
     """Call Claude for risk analysis of banking recommendations"""
     print("🔁 Calling Claude (Anthropic)...")
     try:
-        response = anthropic_client.messages.(
+        response = anthropic_client.messages.create(
             model="claude-3-5-sonnet-20241022",  # Updated to current model
             max_tokens=800,
             temperature=0.7,
