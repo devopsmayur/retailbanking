@@ -67,13 +67,13 @@ def main():
         user_input = input("Enter customer details or query: ")
         
         if not user_input.strip():
-            print("Please provide customer information to proceed.")
+            print("Please provide customer information to .")
             return
         
         # Step 1: Call OpenAI for recommendations
         recommendations = call_openai_gpt4(user_input)
         print("\n✅ GPT-4 Product Recommendations:")
-        print(recommendations)
+        prnt(recommendations)
         
         # Step 2: Pass to Claude for risk analysis
         risk_analysis = call_claude(recommendations)
