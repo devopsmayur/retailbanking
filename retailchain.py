@@ -77,7 +77,7 @@ def main():
         
         # Step 2: Pass to Claude for risk analysis
         risk_analysis = call_claude(recommendations)
-        print("\n⚠️ Claude Risk Analys")
+        print("\n⚠️ Claude Risk Analysis:")
         print(risk_analysis)
         
     except Exception as e:
