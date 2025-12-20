@@ -71,7 +71,7 @@ def main():
             return
         
         # Step 1: Call OpenAI for recommendations
-        recommendations = call_openai_gpt4(user_inp)
+        recommendations = call_openai_gpt4(user_input)
         print("\n✅ GPT-4 Product Recommendations:")
         print(recommendations)
         
