@@ -71,13 +71,13 @@ def main():
             return
         
         # Step 1: Call OpenAI for recommendations
-        recommendations = call_openai_gpt4(user_input)
+        recommendations = call_openai_gpt4(user_inp)
         print("\n✅ GPT-4 Product Recommendations:")
         print(recommendations)
         
         # Step 2: Pass to Claude for risk analysis
         risk_analysis = call_claude(recommendations)
-        print("\n⚠️ Claude Risk Analysis:")
+        print("\n⚠️ Claude Risk Analys")
         print(risk_analysis)
         
     except Exception as e:
