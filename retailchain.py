@@ -19,7 +19,7 @@ def call_openai_gpt4(prompt: str) -> str:
             model="gpt-4",
             temperature=0.7,
             messages=[
-                {"role": "system", "content": "You are a retail banking advisor."},
+                {"role": "system", "content": "You are a retail banking advisor
                 {"role": "user", "content": f"Given this customer info, suggest suitable banking products: {prompt}"}
             ]
         )
