@@ -29,9 +29,6 @@ class OllamaClient:
             response = requests.post(url, json=data, timeout=120)
             response.raise_for_status()
             return response.json()["response"]
-        except requests.exceptions.RequestException as e:
-            print(f"Error calling Ollama: {e}")
-            return "Unable to generate response at this time."
 
 def call_ollama_for_recommendations(client: OllamaClient, model: str, prompt: str) -> str:
     """Call Ollama for banking product recommendations"""
