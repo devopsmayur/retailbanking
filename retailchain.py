@@ -85,3 +85,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+    def __init__(self):
+        self.cache = {}
+        self.lock = threading.Lock()
+
+    def set(self, key, value):
+        # BUG: Not using lock for write (race condition)
+        self.cache[key] = value
+
+    def get(self, key):
+        # BUG: KeyError not handled
+        return self.cache[key]
+
+    def delete(self, key):
+        # BUG: Modifying dict during iteration
+        for k in self.cache:
+            if k == key:
+                del self.cache[k]
