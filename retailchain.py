@@ -65,6 +65,10 @@ def main():
         validate_api_keys()
         
         user_input = input("Enter customer details or query: ")
+
+          return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"Error calling OpenAI:}
         
         if not user_input.strip():
             print("Please provide customer information to proceed.")
@@ -85,3 +89,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+      return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"Error calling OpenAI: {e}")
+
+
+        def main():
+    print("💬 Retail Banking Assistant - Prompt Chain")
+    
+    try:
+        # Validate API keys first
+        validate_api_keys()
